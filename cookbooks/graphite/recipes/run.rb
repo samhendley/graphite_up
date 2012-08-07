@@ -1,6 +1,5 @@
 execute 'restart carbon-cache' do
-  command '/opt/graphite/bin/carbon-cache.py stop &&
-            /opt/graphite/bin/carbon-cache.py start'
+  command '/opt/graphite/bin/carbon-cache.py stop && sleep 3 && /opt/graphite/bin/carbon-cache.py start'
 end
 
 execute 'restart apache' do
