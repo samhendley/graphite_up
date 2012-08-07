@@ -107,9 +107,9 @@ def load_current_resource
   @current_resource.package_name(@new_resource.package_name)
   @current_resource.version(nil)
   
-  unless current_installed_version.nil?
-    @current_resource.version(current_installed_version)
-  end
+#  unless current_installed_version.nil?
+#    @current_resource.version(current_installed_version)
+#  end
   
   @current_resource
 end
